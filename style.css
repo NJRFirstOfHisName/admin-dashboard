@@ -3,6 +3,11 @@
     grid-template-columns: minmax(200px, 1fr) 5fr;
 }
 
+.header, .content, .navigation, .toolbar{
+    gap: 10px;
+    padding: 10px;
+}
+
 .header, .content {
     grid-column: 2 / 3;
 }
@@ -11,9 +16,11 @@
     grid-column: 1 / 2;
     display: grid;
     grid-row: span 2;
-    background-color: rgb(40, 151, 57);
+    background-color: rgb(44, 135, 221);
     color: white;
-    gap: 10px;
+    padding: 10px;
+    gap: 4px;
+    grid-template-rows: 50px repeat(6, 25px) 40px repeat(3, 25px);
 }
 
 .navigation {
@@ -29,18 +36,30 @@
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: rgb(228, 228, 228);
 }
 
 .projects {
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
-.projects-header {
-    grid-column: 1 / 3;
+.card, .announcements, .trending {
+    background-color: white;
+    padding: 8px;
 }
 
 .announcements, .trending {
     grid-column: 2 / 3;
+}
+
+.trending {
+    display: grid;
+    gap: 8px;
+}
+
+h3 {
+    margin: 10px 0 0;
 }
