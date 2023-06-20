@@ -21,6 +21,7 @@
     padding: 10px;
     gap: 4px;
     grid-template-rows: 50px repeat(6, 25px) 40px repeat(3, 25px);
+    grid-template-columns: 20px 2fr;
 }
 
 .navigation {
@@ -62,4 +63,9 @@
 
 h3 {
     margin: 10px 0 0;
+}
+
+img {
+    height: 1em;
+    width: 1em;
 }
