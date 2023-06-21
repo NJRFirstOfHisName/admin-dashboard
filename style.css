@@ -40,9 +40,10 @@
     padding: 5px;
 }
 
+
 .navigation {
     display: grid;
-    grid-template-columns: 1em 5fr repeat(3, 1fr);
+    grid-template-columns: 1em 5fr 1em 1.3em 5em;
 }
 
 input {
@@ -50,6 +51,7 @@ input {
     border-radius: 15px;
     border: 0;
     height: 1.8em;
+    width: 40em;
 }
 
 .user-info {
@@ -57,10 +59,9 @@ input {
     justify-self: end;
 }
 
-
 .toolbar {
     display: grid;
-    grid-template-columns: 1em 4fr repeat(3, 1fr);
+    grid-template-columns: 1em 8fr repeat(3, 1fr);
     gap: 20px;
     align-items: center;
 }
@@ -76,13 +77,14 @@ button {
     border: 0;
     padding: 5px;
     font-weight: bold;
-    height: 2em;
+    height: 2.5em;
 }
 
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: rgb(228, 228, 228);
+    box-shadow: inset 1px 2px 5px gray;
 }
 
 .projects {
@@ -95,6 +97,24 @@ button {
 .card, .announcements, .trending {
     background-color: white;
     padding: 8px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px gray;
+}
+
+.card {
+    display: grid;
+    padding: 25px;
+    background: linear-gradient(to right, goldenrod 3%, white 0%);
+    grid-template-rows: 1em 3fr 1fr;
+}
+
+.icons {
+    align-self: end;
+    justify-self: end;
+}
+
+.highlights h3 {
+    margin: 10px;
 }
 
 .announcements, .trending {
@@ -107,6 +127,17 @@ button {
     padding: 25px;
 }
 
+.announce {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+hr {
+    border-top: 1px solid black;
+}
+
 .trending {
     display: grid;
     gap: 8px;
@@ -115,6 +146,7 @@ button {
 .trending div {
     display: grid;
     grid-template-columns: 1fr 6fr;
+    gap: 5px;
 }
 
 h3 {
